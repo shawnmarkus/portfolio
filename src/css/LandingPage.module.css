@@ -1,0 +1,117 @@
+:root {
+  --title: #24bba0;
+  --header: #5371e1;
+  --detail: #b2b2b2;
+  --highlight: #5371e1;
+  --text: #ffffff;
+}
+
+.masterContainer {
+  width: calc(100vw - 8rem);
+  height: 100vh;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: rows;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.welcomeNoteDiv {
+  /* width; */
+  min-width: calc((100vw - 8rem) / 2);
+  padding: 2rem 0;
+}
+.welcomeNoteDiv h1 {
+  padding: 0 0.5rem;
+  font-size: 4rem;
+  /* font-weight: 100; */
+}
+
+.greetStatement {
+  padding: 1rem 0.5rem;
+  font-size: 1.1rem;
+}
+
+.greetStatement h3 {
+  font-weight: 200;
+}
+
+.photo {
+  background: green;
+  max-height: 50%;
+}
+
+.photo,
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image {
+  /* z-index: -1; */
+  /* max-width: inherit; */
+  object-fit: contain;
+  width: 100%;
+  background: #000;
+}
+
+.circle {
+  /* background-color: yellow; */
+  max-width: 80%;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  animation: morph 3s linear 0.1s infinite alternate;
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 60% 70% 30% / 30% 30% 70% 70%;
+  }
+  70% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 50%;
+  }
+}
+
+.hrText {
+  position: relative;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, var(--detail), transparent);
+}
+
+/* this section is to create a text between the hr line  */
+/* .hrText::before {
+  content: "";
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--detail),
+    transparent
+  );
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+} */
+
+/* .hrText::after { */
+/* content: attr(data-content);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0); */
+/* display: inline-block; */
+
+/* padding: 0 0.5em; */
+/* line-height: 1.5em; */
+/* color: black; */
+/* color: var(--title);
+  background-color: black; */
+/* } */
+
+/*end here  */
