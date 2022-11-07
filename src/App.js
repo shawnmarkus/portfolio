@@ -31,7 +31,7 @@ function App() {
           <Navbar2 />
           <LandingPage id="home" />
           <About id="about" />
-          <Academics id="academics" />
+          {/* <Academics id="academics" /> */}
           <Skills id="skills" />
           <Projects id="projects" />
           <Contact id="contact" />

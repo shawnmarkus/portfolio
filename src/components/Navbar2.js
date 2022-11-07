@@ -7,7 +7,7 @@ import { Link as NavLink } from "react-scroll";
 const NavLabel = {
   Me: "home",
   About: "about",
-  Academics: "academics",
+  // Academics: "academics",
   Skills: "skills",
   Projects: "projects",
   Contact: "contact",

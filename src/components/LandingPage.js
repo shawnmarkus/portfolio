@@ -1,24 +1,26 @@
 import React from "react";
 import LandingPageStyle from "../css/LandingPage.module.css";
-import image1 from "../image/ivan-bandura-_pan-3SEDmI-unsplash.jpg";
+import image1 from "/home/shivam/codes/portfolio/src/image/profilePhoto.jpg";
 export const LandingPage = ({ id }) => {
   return (
     <>
       <div className={LandingPageStyle.masterContainer} id={id}>
         <div className={LandingPageStyle.welcomeNoteDiv}>
-          <h1>Hello</h1>
-          <hr className={LandingPageStyle.hrText} data-content="hey-hi" />
-          <div className={LandingPageStyle.greetStatement}>
-            <h3>
-              I, <i>shivam sharma</i>
-              <i>
-                <b> (software Engineer)</b>
-              </i>{" "}
-              greets you on my page,
-            </h3>
-            <h3>
-              from <i>Ballia</i>, Uttae Pradesh
-            </h3>
+          <div className={LandingPageStyle.wrapperDiv}>
+            <h1>Hello</h1>
+            <hr className={LandingPageStyle.hrText} data-content="hey-hi" />
+            <div className={LandingPageStyle.greetStatement}>
+              <h3>
+                I, <i>shivam sharma</i>
+                <i>
+                  <b> (software Engineer) </b>
+                </i>
+                greets you on my page,
+              </h3>
+              <h3>
+                from <i>Ballia</i>, Uttar Pradesh
+              </h3>
+            </div>
           </div>
         </div>
         <div

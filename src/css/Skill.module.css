@@ -1,0 +1,89 @@
+.masterContainer {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+}
+
+.outerContainer {
+  width: 70%;
+  height: 80%;
+  justify-self: center;
+  align-self: center;
+  /* the above alignment is for the parent display grid */
+
+  color: white;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 500px 100px rgba(0, 0, 0, 0.6);
+  padding: 2rem 4rem;
+  overflow-y: hidden;
+}
+
+.outerContainer h1 {
+  padding: 0 0.6rem;
+  font-size: 2.5rem;
+}
+
+.hrCustom {
+  margin: 0.6rem;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.innerContainer {
+  height: calc(100% - 8.4rem);
+  overflow-y: scroll;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 15px;
+  column-gap: 15px;
+  grid-template-areas:
+    "one two"
+    "one three";
+}
+
+.innerContainer div > div {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.generalSection,
+.certificates,
+.acquintanceSection {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 2rem;
+  background-color: rgba(245, 245, 245, 0.07);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+
+.generalSection {
+  grid-area: one;
+}
+.certificates {
+  grid-area: three;
+}
+.acquintanceSection {
+  grid-area: two;
+}
+
+.innerWrapGen > section {
+  margin-bottom: 2rem;
+}
+
+.sectionContainer > div:nth-child(3) {
+  padding: 0 0;
+}
+
+/* note ">" is used to select the 3 child div which is child of class sectionContainer not   */
+
+.sectionContainer > div:nth-child(3) > ul,
+.acquintanceSection div > ul,
+.certificates div > ul {
+  display: block;
+  padding: 0 2rem;
+  list-style-type: initial;
+}

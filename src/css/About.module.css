@@ -1,0 +1,61 @@
+.masterContainer {
+  width: calc(100vw);
+  height: 100vh;
+  /* padding: 0 4rem; */
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  color: white;
+  align-items: center;
+}
+
+.aboutMeHeading {
+  /* display: flex;
+  min-width: calc((100vw - 8rem) / 4);
+  min-height: calc((100vh - 2rem));
+  align-items: center;
+  justify-content: center; */
+  min-width: 30vw;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMeContent {
+  /* display: flex;
+  min-width: calc((100vw - 8rem) / 2);
+  min-height: calc((100vh - 2rem));
+  align-items: center;
+  justify-content: center; */
+  width: 80vw;
+  height: 50%;
+  /* background-color: teal; */
+  /* the below display grid is used ao that the child element can use the property of self centering  */
+  display: grid;
+}
+
+.aboutMeContentInner {
+  justify-self: center;
+  align-self: center;
+  width: 80%;
+  max-height: 90%;
+  height: fit-content;
+  overflow-y: scroll;
+  backdrop-filter: blur(15px);
+  /* scroll-behavior: smooth; */
+  /* background-color: #ffffff; */
+  color: black;
+  display: grid;
+  box-shadow: 0 0 500px 100px rgba(0, 0, 0, 0.6);
+}
+
+.aboutMeContentInner p {
+  color: white;
+  justify-self: center;
+  align-self: center;
+  padding: 2rem 4rem;
+  letter-spacing: 2px;
+  line-height: 1.5rem;
+}

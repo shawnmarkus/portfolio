@@ -1,0 +1,7 @@
+.hrCustom {
+  margin-bottom: 0.6rem;
+  border: 0;
+  height: 1px;
+  /* width: 40%; */
+  background: linear-gradient(to right, white, transparent);
+}
