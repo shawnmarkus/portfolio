@@ -50,7 +50,7 @@
 }
 
 .photo {
-  background: green;
+  /* background: green; */
   max-height: calc((100vh - 2rem) / 2);
 
   /* min-width: calc((100vw - 8rem) / 4); */

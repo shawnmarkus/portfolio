@@ -4,12 +4,12 @@ import LandingPage from "./components/LandingPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar2 from "./components/Navbar2";
 import About from "./components/About";
-import Academics from "./components/Academics";
+// import Academics from "./components/Academics";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import { Skills } from "./components/Skills";
 // import MiddleSection from "./components/MiddleSection";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 
 function App() {
   return (

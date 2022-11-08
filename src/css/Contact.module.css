@@ -1,7 +1,94 @@
 .masterContainer {
   height: 100vh;
+  display: grid;
 }
 
 .outerContainer {
-  padding: 3rem;
+  padding: 1rem 2rem;
+  width: 70%;
+  color: white;
+  height: 70%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 500px 100px rgba(0, 0, 0, 0.6);
+  justify-self: center;
+  align-self: center;
+}
+
+.titleContainer {
+  display: grid;
+}
+
+.titleContainer > div > h1 {
+  padding-right: 1rem;
+}
+
+.titleContainer > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 0 0.5rem 0.5rem;
+}
+
+.formStr {
+  width: 100%;
+  height: calc(100% - 6rem);
+  /* background-color: black; */
+  justify-self: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.inputName,
+.inputEmail,
+.inputSubject,
+.inputMessage {
+  background-color: rgba(255, 255, 255, 0.055);
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: large;
+  font-family: monospace;
+  border: 1px solid white;
+  border-radius: 10px;
+  outline: 0;
+}
+
+.inputName {
+  grid-area: name;
+}
+
+.inputEmail {
+  grid-area: email;
+}
+
+.inputSubject {
+  grid-area: subject;
+}
+
+.inputMessage {
+  grid-area: message;
+  /* height: 100%; */
+  padding: 1rem 2rem;
+}
+
+.submitBtn {
+  grid-area: submit;
+  font-size: large;
+  border-radius: 10px;
+}
+.submitBtn:hover {
+  background-color: rgb(49, 87, 158);
+}
+
+.formGrid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-template-areas:
+    "name email"
+    "subject subject"
+    "message message "
+    "submit submit";
 }
