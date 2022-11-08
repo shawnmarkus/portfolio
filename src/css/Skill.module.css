@@ -14,7 +14,7 @@
   color: white;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 500px 100px rgba(0, 0, 0, 0.6);
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   overflow-y: hidden;
 }
 
@@ -87,3 +87,13 @@
   padding: 0 2rem;
   list-style-type: initial;
 }
+
+@media (max-width: 800px) {
+  .innerContainer {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "one" "two"
+      "three";
+  }
+} ;

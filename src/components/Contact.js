@@ -1,31 +1,44 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import contactStyle from "../css/Contact.module.css";
 import Hr from "./Hr";
 import emailjs from "@emailjs/browser";
 
 const Contact = ({ id }) => {
-  const form = useRef();
+  // const form = useRef();
+  const initialState = {
+    from_name: "",
+    subject: "",
+    to_name: "shivam sharma",
+    message: "",
+    reply_to: "",
+  };
+
+  const [value, setValue] = useState(initialState);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current);
+    console.log("clicked the send button");
+
     emailjs
-      .sendForm(
-        "service_dvnw0rq",
-        "template_4gh3e08",
-        form.current,
-        "l3UP3LZVzoyWmIaOa"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .send("service_dvnw0rq", "template_4gh3e08", value, "l3UP3LZVzoyWmIaOa")
+      .then((info) => {
+        console.log(info);
+
+        // prompt(info);
+      })
+      .catch((error) => {
+        console.log(error);
+        prompt(error);
+      });
+
+    resetForm();
   };
 
+  const resetForm = () => {
+    console.log("reset");
+
+    setValue(initialState);
+  };
   return (
     <div id={id} className={contactStyle.masterContainer}>
       <div className={contactStyle.outerContainer}>
@@ -38,30 +51,42 @@ const Contact = ({ id }) => {
         </div>
 
         <div className={contactStyle.formStr}>
-          <form
-            className={contactStyle.formGrid}
-            ref={form}
-            onSubmit={sendEmail}
-          >
+          <form className={contactStyle.formGrid} onSubmit={sendEmail}>
             <input
               className={contactStyle.inputName}
               type="text"
               placeholder="Enter Your name"
+              onChange={(e) => {
+                setValue({ ...value, from_name: e.target.value });
+              }}
+              value={value.from_name}
             />
             <input
               className={contactStyle.inputEmail}
               type="text"
               placeholder="Enter Your Email"
+              onChange={(e) => {
+                setValue({ ...value, reply_to: e.target.value });
+              }}
+              value={value.reply_to}
             />
             <input
               className={contactStyle.inputSubject}
               type="text"
               placeholder="Enter Subject"
+              onChange={(e) => {
+                setValue({ ...value, subject: e.target.value });
+              }}
+              value={value.subject}
             />
             <textarea
               className={contactStyle.inputMessage}
               type="text"
               placeholder="Enter your message"
+              onChange={(e) => {
+                setValue({ ...value, message: e.target.value });
+              }}
+              value={value.message}
             />
             <input
               className={contactStyle.submitBtn}
@@ -69,16 +94,6 @@ const Contact = ({ id }) => {
               value="Submit"
             />
           </form>
-
-          {/* <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-          </form> */}
         </div>
       </div>
     </div>

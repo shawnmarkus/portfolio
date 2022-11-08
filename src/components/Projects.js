@@ -100,14 +100,14 @@ const projectCard = {
 const ProjectContainer = ({ title, imgSrc, discription }) => {
   return (
     <>
-      <div style={projectCard.mainDiv}>
-        <div style={projectCard.imgDiv}>
-          <img style={projectCard.innerImg} src={imgSrc} alt="techImg" />
+      <div className={projectStyle.mainDiv}>
+        <div className={projectStyle.imgDiv}>
+          <img className={projectStyle.innerImg} src={imgSrc} alt="techImg" />
         </div>
-        {/* <div style={projectCard.vl}></div> */}
-        <div style={projectCard.discriptionDiv}>
-          <div style={projectCard.titleContainer}>
-            <h2 style={projectCard.cardTitle}>{title}</h2>
+        {/* <div className={projectStyle.vl}></div> */}
+        <div className={projectStyle.discriptionDiv}>
+          <div className={projectStyle.titleContainer}>
+            <h2 className={projectStyle.cardTitle}>{title}</h2>
             <Hr />
           </div>
 
@@ -118,7 +118,7 @@ const ProjectContainer = ({ title, imgSrc, discription }) => {
               borderRadius: "10px",
             }}
           >
-            <h3 style={projectCard.descriptionText}>Description : </h3>
+            <h3 className={projectStyle.descriptionText}>Description : </h3>
             <p style={{ fontFamily: "Monospace", paddingTop: "0.5rem" }}>
               {discription}
             </p>

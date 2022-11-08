@@ -84,15 +84,11 @@
   transform: scale(3, 3);
   top: 4rem;
   left: -2rem;
-  /* position: absolute; */
-
-  /* background: #000; */
 }
 
 @keyframes morph {
   0%,
   100% {
-    /* border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%; */
     border-radius: 70% 60% 80% 40% / 90% 50% 60% 50%;
   }
   34% {
@@ -113,33 +109,23 @@
 /* animation will be added from below  */
 
 /* this section is to create a text between the hr line  */
-/* .hrText::before {
-  content: "";
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--detail),
-    transparent
-  );
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 1px;
-} */
 
-/* .hrText::after { */
-/* content: attr(data-content);
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0); */
-/* display: inline-block; */
+@media (max-width: 1090px) {
+  .masterContainer {
+    /* width: calc(100vw - 8rem);
+    height: 100vh;
+    padding: 0 4rem;
+    display: flex; */
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
-/* padding: 0 0.5em; */
-/* line-height: 1.5em; */
-/* color: black; */
-/* color: var(--title);
-  background-color: black; */
-/* } */
+@media (max-width: 550px) {
+  .photo {
+    /* background: green; */
 
-/*end here  */ ;
+    min-width: 70vw;
+  }
+}

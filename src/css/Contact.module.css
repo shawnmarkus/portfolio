@@ -8,6 +8,7 @@
   width: 70%;
   color: white;
   height: 70%;
+  /* height: fit-content; */
   backdrop-filter: blur(10px);
   box-shadow: 0 0 500px 100px rgba(0, 0, 0, 0.6);
   justify-self: center;
@@ -32,7 +33,9 @@
 .formStr {
   width: 100%;
   height: calc(100% - 6rem);
-  /* background-color: black; */
+  /* height: calc(100% - 7rem); */
+  /* height: 100% - 6rem; */
+
   justify-self: center;
   padding: 1rem 0 1rem 0;
 }
@@ -43,12 +46,13 @@
 .inputMessage {
   background-color: rgba(255, 255, 255, 0.055);
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0 0.5rem 2rem;
   font-size: large;
   font-family: monospace;
   border: 1px solid white;
   border-radius: 10px;
   outline: 0;
+  overflow: auto;
 }
 
 .inputName {
@@ -65,7 +69,6 @@
 
 .inputMessage {
   grid-area: message;
-  /* height: 100%; */
   padding: 1rem 2rem;
 }
 
@@ -76,6 +79,7 @@
 }
 .submitBtn:hover {
   background-color: rgb(49, 87, 158);
+  color: white;
 }
 
 .formGrid {
@@ -91,4 +95,27 @@
     "subject subject"
     "message message "
     "submit submit";
+}
+
+@media (max-width: 540px) {
+  .formGrid {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    grid-template-areas:
+      "name "
+      "email"
+      "subject "
+      "message  "
+      "submit ";
+  }
+
+  .formStr {
+    width: 100%;
+    /* height: calc(100% - 6rem); */
+    height: calc(100% - 8rem);
+    /* height: 100% - 6rem; */
+
+    justify-self: center;
+    padding: 1rem 0 1rem 0;
+  }
 }
