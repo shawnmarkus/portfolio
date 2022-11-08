@@ -1,9 +1,7 @@
 .masterContainer {
   height: 100vh;
-  /* display: grid; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  display: grid;
 }
 
 .outerContainer {
@@ -14,8 +12,8 @@
   /* height: fit-content; */
   backdrop-filter: blur(10px);
   box-shadow: 0 0 500px 100px rgba(0, 0, 0, 0.6);
-  /* justify-self: center; */
-  /* align-self: center; */
+  justify-self: center;
+  align-self: center;
 }
 
 .titleContainer {
@@ -101,13 +99,6 @@
 }
 
 @media (max-width: 540px) {
-  .masterContainer {
-    height: 100vh;
-    /* display: grid; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .formGrid {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr 3fr 1fr;

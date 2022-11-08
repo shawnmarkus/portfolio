@@ -39,6 +39,7 @@ const Contact = ({ id }) => {
 
     setValue(initialState);
   };
+
   return (
     <div id={id} className={contactStyle.masterContainer}>
       <div className={contactStyle.outerContainer}>
