@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d08ea541.css",
-    "main.js": "/portfolio/static/js/main.c0a6735a.js",
+    "main.css": "/portfolio/static/css/main.8e36b7da.css",
+    "main.js": "/portfolio/static/js/main.d49b5525.js",
     "static/media/profilePhoto.jpg": "/portfolio/static/media/profilePhoto.b906d542b4d93f33a6a3.jpg",
     "static/media/isuru-ranasinha-DBdMq9ArT5A-unsplash.jpg": "/portfolio/static/media/isuru-ranasinha-DBdMq9ArT5A-unsplash.787bbcd1f1b7f1d24f5e.jpg",
     "static/media/Python-PNG-File.png": "/portfolio/static/media/Python-PNG-File.2971f8ca9ea7f8f9667e.png",
     "static/media/MERN-logo.png": "/portfolio/static/media/MERN-logo.39d4f78651cc4a93b96f.png",
     "index.html": "/portfolio/index.html",
-    "main.d08ea541.css.map": "/portfolio/static/css/main.d08ea541.css.map",
-    "main.c0a6735a.js.map": "/portfolio/static/js/main.c0a6735a.js.map"
+    "main.8e36b7da.css.map": "/portfolio/static/css/main.8e36b7da.css.map",
+    "main.d49b5525.js.map": "/portfolio/static/js/main.d49b5525.js.map"
   },
   "entrypoints": [
-    "static/css/main.d08ea541.css",
-    "static/js/main.c0a6735a.js"
+    "static/css/main.8e36b7da.css",
+    "static/js/main.d49b5525.js"
   ]
 }
