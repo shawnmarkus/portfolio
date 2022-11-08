@@ -1,6 +1,9 @@
 .masterContainer {
   height: 100vh;
-  display: grid;
+  /* display: grid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .outerContainer {
@@ -11,8 +14,8 @@
   /* height: fit-content; */
   backdrop-filter: blur(10px);
   box-shadow: 0 0 500px 100px rgba(0, 0, 0, 0.6);
-  justify-self: center;
-  align-self: center;
+  /* justify-self: center; */
+  /* align-self: center; */
 }
 
 .titleContainer {
