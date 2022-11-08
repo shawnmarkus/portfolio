@@ -53,50 +53,6 @@ const Projectdetails = [
   },
 ];
 
-const projectCard = {
-  mainDiv: {
-    maxWidth: "100%",
-    height: "fit-content",
-    backgroundColor: "rgba(255, 255, 255, 0.216)",
-    display: "flex",
-    padding: "1rem",
-    margin: "10px",
-    borderRadius: "10px",
-    // flexGrow: "1",
-  },
-  imgDiv: {
-    display: "grid",
-    gridTemplateRows: "100px",
-    gridTemplateColumns: "100px",
-    gridTemplateAreas: "'one'",
-  },
-
-  innerImg: {
-    width: "100%",
-    height: "100%",
-    gridArea: "one",
-    objectFit: "contain",
-  },
-
-  // vl: {
-  //   borderRight: "6px solid white",
-  //   height: "100px",
-  //   margin: "0 1rem 0 0.6rem",
-  // },
-
-  titleContainer: {
-    width: "fit-content",
-  },
-
-  discriptionDiv: {
-    borderLeft: "6px solid white",
-    padding: " 0.5rem 0 0.5rem 1rem ",
-    marginLeft: "0.6rem",
-    // height: "100px",
-    // margin: "0 1rem 0 0.6rem",
-  },
-};
-
 const ProjectContainer = ({ title, imgSrc, discription }) => {
   return (
     <>
