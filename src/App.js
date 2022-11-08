@@ -1,7 +1,7 @@
 import style from "./App.module.css";
 
 import LandingPage from "./components/LandingPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Navbar2 from "./components/Navbar2";
 import About from "./components/About";
 // import Academics from "./components/Academics";
