@@ -29,24 +29,24 @@ const Projects = ({ id }) => {
 
 const Projectdetails = [
   {
-    imgSrc: require("/home/shivam/codes/portfolio/src/image/MERN-logo.png"),
+    imgSrc: require("../image/MERN-logo.png"),
     title: "Fees Dashboard",
     discription: "Register student and create logs and Admin side fees log",
   },
   {
-    imgSrc: require("/home/shivam/codes/portfolio/src/image/MERN-logo.png"),
+    imgSrc: require("../image/MERN-logo.png"),
     title: "Login with forgot password feature",
     discription:
       "user can use this module in any project to implement login feature log",
   },
   {
-    imgSrc: require("/home/shivam/codes/portfolio/src/image/MERN-logo.png"),
+    imgSrc: require("../image/MERN-logo.png"),
     title: "Portfolio",
     discription:
       "I have created a portfolio site of mine with simple and sober visuals. To represent my acheivement and complete details, I used MERN to create this Portofio site",
   },
   {
-    imgSrc: require("/home/shivam/codes/portfolio/src/image/Python-PNG-File.png"),
+    imgSrc: require("../image/Python-PNG-File.png"),
     title: "Youtube Video Downloader",
     discription:
       "It was my first project in collaboration, where i worked on fetching the data and metadata for provided Youtube Video",
