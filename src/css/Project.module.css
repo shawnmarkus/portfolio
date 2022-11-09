@@ -1,14 +1,16 @@
 .masterContainer {
   height: 100vh;
   min-width: 100vw;
+  color: white;
+  font-family: sans-serif;
 
   /* padding: 3rem 0; */
   display: grid;
-  color: white;
 }
 
 .outerContainer {
   width: 100%;
+  color: white;
   height: 80%;
   justify-self: center;
   align-self: center;
@@ -35,6 +37,8 @@
   height: 90%;
   background-color: rgba(255, 255, 255, 0.055);
   overflow-y: scroll;
+  color: white;
+
   /* border: 11px solid white; */
   /* border-image: linear-gradient(90deg, purple, orange); */
 }
@@ -54,6 +58,7 @@
   padding: 1rem;
   margin: 10px;
   border-radius: 10px;
+  color: white;
 }
 
 .imgDiv {
@@ -61,6 +66,7 @@
   grid-template-rows: 100px;
   grid-template-columns: 100px;
   grid-template-areas: "one";
+  color: white;
 }
 
 .innerImg {
@@ -68,16 +74,19 @@
   height: 100%;
   grid-area: "one";
   object-fit: contain;
+  color: white;
 }
 
 .titleContainer {
   width: "fit-content";
+  color: white;
 }
 
 .discriptionDiv {
   border-left: 6px solid white;
   padding: 0.5rem 0 0.5rem 1rem;
   margin-left: 0.6rem;
+  color: white;
 }
 
 /*  */
@@ -87,9 +96,11 @@
     display: flex;
     flex-direction: column;
     min-width: 200px;
+    color: white;
   }
 
   .imgDiv {
     align-self: center;
+    color: white;
   }
 }

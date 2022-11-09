@@ -4,7 +4,6 @@ import Hr from "./Hr";
 import emailjs from "@emailjs/browser";
 
 const Contact = ({ id }) => {
-  // const form = useRef();
   const initialState = {
     from_name: "",
     subject: "",
@@ -41,9 +40,26 @@ const Contact = ({ id }) => {
   };
 
   return (
-    <div id={id} className={contactStyle.masterContainer}>
-      <div className={contactStyle.outerContainer}>
-        <div className={contactStyle.titleContainer}>
+    <div
+      id={id}
+      style={{ height: "100vh", width: "100vw", display: "grid" }}
+      className={contactStyle.masterContainer}
+    >
+      <div
+        style={{
+          width: "70%",
+          height: "80%",
+          color: "white",
+          justifySelf: "center",
+          alignSelf: "center",
+          fontFamily: "sans-serif",
+          backdropFilter: "blur(10px)",
+          boxShadow: "0 0 500px 100px rgba(0, 0, 0, 0.6)",
+          padding: "1rem 2rem",
+        }}
+        className={contactStyle.outerContainerContact}
+      >
+        <div className={contactStyle.titleContainerContact}>
           <div>
             <h1>Contact</h1>
             <h4>Interested in working together? Let's talk</h4>
@@ -52,7 +68,11 @@ const Contact = ({ id }) => {
         </div>
 
         <div className={contactStyle.formStr}>
-          <form className={contactStyle.formGrid} onSubmit={sendEmail}>
+          <form
+            style={{ fontFamily: "sans-serif" }}
+            className={contactStyle.formGrid}
+            onSubmit={sendEmail}
+          >
             <input
               className={contactStyle.inputName}
               type="text"

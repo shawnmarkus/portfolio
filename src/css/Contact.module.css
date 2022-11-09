@@ -1,42 +1,36 @@
-.masterContainer {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-}
-
-.outerContainer {
-  padding: 1rem 2rem;
+/* .outerContainerContact { */
+/* font-family: sans-serif; */
+/* padding: 1rem 2rem; */
+/* color: white;
   width: 70%;
-  color: white;
-  height: 70%;
-  /* height: fit-content; */
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 500px 100px rgba(0, 0, 0, 0.6);
-  justify-self: center;
-  align-self: center;
-}
+  height: 80%; */
+/* max-height: fit-content; */
+/* height: fit-content; */
+/* backdrop-filter: blur(10px);
+  box-shadow: 0 0 500px 100px rgba(0, 0, 0, 0.6); */
+/* justify-self: center;
+  align-self: center; */
+/* } */
 
-.titleContainer {
+.titleContainerContact {
   display: grid;
 }
 
-.titleContainer > div > h1 {
+.titleContainerContact > div > h1 {
+  font-size: 3rem;
   padding-right: 1rem;
 }
 
-.titleContainer > div {
-  display: flex;
-  align-items: baseline;
+.titleContainerContact > div {
+  /* display: flex; */
+  /* align-items: baseline; */
   justify-content: space-between;
   padding: 0 0 0.5rem 0.5rem;
 }
 
 .formStr {
   width: 100%;
-  height: calc(100% - 6rem);
-  /* height: calc(100% - 7rem); */
-  /* height: 100% - 6rem; */
-
+  height: calc(100% - 8rem);
   justify-self: center;
   padding: 1rem 0 1rem 0;
 }
@@ -49,7 +43,7 @@
   color: white;
   padding: 0.5rem 0 0.5rem 2rem;
   font-size: large;
-  font-family: monospace;
+  font-family: "FiraCode Nerd Font";
   border: 1px solid white;
   border-radius: 10px;
   outline: 0;
