@@ -26,8 +26,11 @@
   width: 100vw;
   min-height: 100vh;
   position: relative;
-  /* background-color: brown; */
+  /* background-image: url("./image/ivan-bandura-_pan-3SEDmI-unsplash.jpg"); */
   background-image: url("./image/isuru-ranasinha-DBdMq9ArT5A-unsplash.jpg");
+  background-size: 100%;
   background-attachment: fixed;
-  object-fit: contain;
+  /* background-color: black; */
+
+  object-fit: cover;
 }

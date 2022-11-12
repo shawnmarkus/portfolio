@@ -17,6 +17,7 @@ const Projects = ({ id }) => {
                   title={card.title}
                   imgSrc={card.imgSrc}
                   discription={card.discription}
+                  github_link={card.github_link}
                 />
               );
             })}
@@ -31,29 +32,33 @@ const Projectdetails = [
   {
     imgSrc: require("../image/MERN-logo.png"),
     title: "Fees Dashboard",
+    github_link: "https://github.com/shawnmarkus/sch-fee2/tree/master",
     discription: "Register student and create logs and Admin side fees log",
   },
   {
     imgSrc: require("../image/MERN-logo.png"),
     title: "Login with forgot password feature",
+    github_link: "https://github.com/shawnmarkus/login_forgot_feature",
     discription:
       "user can use this module in any project to implement login feature log",
   },
   {
     imgSrc: require("../image/MERN-logo.png"),
     title: "Portfolio",
+    github_link: "https://github.com/shawnmarkus/portfolio",
     discription:
       "I have created a portfolio site of mine with simple and sober visuals. To represent my acheivement and complete details, I used MERN to create this Portofio site",
   },
   {
     imgSrc: require("../image/Python-PNG-File.png"),
     title: "Youtube Video Downloader",
+    github_link: "",
     discription:
       "It was my first project in collaboration, where i worked on fetching the data and metadata for provided Youtube Video",
   },
 ];
 
-const ProjectContainer = ({ title, imgSrc, discription }) => {
+const ProjectContainer = ({ title, imgSrc, discription, github_link }) => {
   return (
     <>
       <div className={projectStyle.mainDiv}>
@@ -74,9 +79,18 @@ const ProjectContainer = ({ title, imgSrc, discription }) => {
               borderRadius: "10px",
             }}
           >
-            <h3 className={projectStyle.descriptionText}>Description : </h3>
             <p style={{ fontFamily: "Monospace", paddingTop: "0.5rem" }}>
               {discription}
+              {github_link ? (
+                <p className={projectStyle.descriptionText}>
+                  github-link :
+                  <i>
+                    <a href={github_link}> {github_link}</a>{" "}
+                  </i>
+                </p>
+              ) : (
+                <></>
+              )}
             </p>
           </div>
         </div>

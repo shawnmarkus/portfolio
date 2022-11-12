@@ -1,6 +1,6 @@
 import React from "react";
 import LandingPageStyle from "../css/LandingPage.module.css";
-import image1 from "../image/profilePhoto.jpg";
+import image1 from "../image/profilePhoto-min.jpg";
 
 export const LandingPage = ({ id }) => {
   return (

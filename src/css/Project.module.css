@@ -89,6 +89,14 @@
   color: white;
 }
 
+.descriptionText {
+  margin: 0.6rem 0;
+}
+
+.descriptionText a {
+  color: inherit;
+}
+
 /*  */
 
 @media (max-width: 460px) {
