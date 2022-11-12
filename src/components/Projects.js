@@ -82,7 +82,10 @@ const ProjectContainer = ({ title, imgSrc, discription, github_link }) => {
             <p style={{ fontFamily: "Monospace", paddingTop: "0.5rem" }}>
               {discription}
               {github_link ? (
-                <p className={projectStyle.descriptionText}>
+                <p
+                  style={{ overflowWrap: "break-word" }}
+                  className={projectStyle.descriptionText}
+                >
                   github-link :
                   <i>
                     <a href={github_link}> {github_link}</a>{" "}

@@ -6,7 +6,7 @@ const About = ({ id }) => {
   return (
     <div className={aboutStyle.masterContainer} id={id}>
       <div className={aboutStyle.aboutMeHeading}>
-        <h1>About Myself</h1>
+        <h1>About Me</h1>
       </div>
       <div className={aboutStyle.aboutMeContent}>
         {/* hjkfdskjfjkls */}
