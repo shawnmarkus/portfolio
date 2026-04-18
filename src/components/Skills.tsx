@@ -12,7 +12,7 @@ function SkillCard({ label, tags, delay }: SkillCardProps): React.JSX.Element {
   return (
     <div
       ref={ref}
-      className={`fade-up ${visible ? "visible" : ""} group`}
+      className={`fade-up ${visible ? "visible" : ""} group break-inside-avoid mb-4`}
       style={{ animationDelay: delay }}
     >
       <div className="p-6 border border-border bg-bg rounded-lg transition-all duration-300 group-hover:border-amber group-hover:-translate-y-1">
@@ -48,7 +48,8 @@ export default function Skills({ skills }: SkillsProps): React.JSX.Element {
       <div ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>
         <SectionHeader num="01" title="Technical" accent="Skills" />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"> */}
+      <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4">
         {skills.map((s, i) => (
           <SkillCard key={s.label} {...s} delay={`${i * 0.07}s`} />
         ))}

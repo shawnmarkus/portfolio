@@ -53,7 +53,7 @@ export default function Navbar({ resumeUrl }: NavbarProps): React.JSX.Element {
           <a
             href={resumeUrl || "#"}
             download={resumeUrl || undefined}
-            className="font-mono text-xs text-amber border border-amber px-4 py-2 rounded hover:bg-amber hover:text-bg transition-all"
+            className="hidden md:block font-mono text-xs text-amber border border-amber px-4 py-2 rounded hover:bg-amber hover:text-bg transition-all"
           >
             ↓ Resume
           </a>
