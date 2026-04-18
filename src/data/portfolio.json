@@ -214,6 +214,14 @@
       "excerpt": "Learn IAM Service using LocalStack for free",
       "date": "Apr 1, 2025",
       "link": "hhttps://medium.com/@shivamsharmaskp94/aws-iam-service-complete-basics-guide-localstack-70b45b45acbe"
+    },
+    {
+      "tag": "Cache, VitePWA, Service worker",
+      "title": "The “Stale” app issue: Browser & Cache and Service workers",
+      "excerpt": "Before we move ahead, let me clear, what we used for caching strategy, CacheFirst: Serve the cache and then load the latest in background.",
+      "date": "Apr 18, 2026",
+      "link": "https://medium.com/@shivamsharmaskp94/the-stale-app-issue-browser-cache-and-service-workers-f01991d2d58f"
+    
     }
   ],
   "contact": {
