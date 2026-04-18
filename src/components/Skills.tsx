@@ -1,7 +1,13 @@
+import React from "react";
 import { useInView } from "../hooks/useInView";
 import SectionHeader from "./SectionHeader";
+import type { SkillGroup } from "../types";
 
-function SkillCard({ label, tags, delay }) {
+interface SkillCardProps extends SkillGroup {
+  delay: string;
+}
+
+function SkillCard({ label, tags, delay }: SkillCardProps): React.JSX.Element {
   const [ref, visible] = useInView();
   return (
     <div
@@ -28,7 +34,11 @@ function SkillCard({ label, tags, delay }) {
   );
 }
 
-export default function Skills({ skills }) {
+interface SkillsProps {
+  skills: SkillGroup[];
+}
+
+export default function Skills({ skills }: SkillsProps): React.JSX.Element {
   const [ref, visible] = useInView();
   return (
     <section

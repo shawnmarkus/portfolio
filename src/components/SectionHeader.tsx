@@ -1,4 +1,15 @@
-export default function SectionHeader({ num, title, accent }) {
+import React from "react";
+interface SectionHeaderProps {
+  num: string;
+  title: string;
+  accent: string;
+}
+
+export default function SectionHeader({
+  num,
+  title,
+  accent,
+}: SectionHeaderProps): React.JSX.Element {
   return (
     <div className="flex items-center gap-4 mb-12">
       <span className="font-mono text-xs text-amber opacity-50">{num}</span>

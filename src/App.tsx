@@ -1,3 +1,4 @@
+import React from "react";
 import "./index.css";
 import Cursor from "./components/Cursor";
 import Navbar from "./components/Navbar";
@@ -9,16 +10,22 @@ import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import { usePortfolioData } from "./hooks/usePortfolioData";
 
-function Footer({ name }) {
+interface FooterProps {
+  name: string;
+}
+
+function Footer({ name }: FooterProps): React.JSX.Element {
   return (
     <footer className="relative z-10 px-6 md:px-16 py-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-2 font-mono text-xs text-muted">
       <span>© 2026 {name}</span>
-      <span>Built with React + Tailwind · Data-driven via JSON</span>
+      <span>
+        Built with React + TypeScript + Tailwind · Data-driven via JSON
+      </span>
     </footer>
   );
 }
 
-export default function App() {
+export default function App(): React.JSX.Element {
   const { data, loading } = usePortfolioData();
 
   if (loading) {

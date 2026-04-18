@@ -1,7 +1,19 @@
+import React from "react";
 import { useInView } from "../hooks/useInView";
 import SectionHeader from "./SectionHeader";
+import type { Experience as ExperienceType } from "../types";
 
-function ExpItem({ company, role, period, bullets, delay }) {
+interface ExpItemProps extends ExperienceType {
+  delay: string;
+}
+
+function ExpItem({
+  company,
+  role,
+  period,
+  bullets,
+  delay,
+}: ExpItemProps): React.JSX.Element {
   const [ref, visible] = useInView();
   return (
     <div
@@ -10,13 +22,11 @@ function ExpItem({ company, role, period, bullets, delay }) {
       style={{ animationDelay: delay }}
     >
       <div className="flex flex-col md:grid md:grid-cols-[180px_1fr] gap-4 md:gap-10 py-10 border-b border-border last:border-0">
-        {/* meta */}
         <div className="md:sticky md:top-20 md:self-start">
           <p className="font-mono text-xs text-amber">{period}</p>
           <p className="font-bold text-base mt-1.5 mb-1">{company}</p>
           <p className="font-mono text-xs text-muted">{role}</p>
         </div>
-        {/* bullets */}
         <ul className="flex flex-col gap-3">
           {bullets.map((b, i) => (
             <li
@@ -35,7 +45,13 @@ function ExpItem({ company, role, period, bullets, delay }) {
   );
 }
 
-export default function Experience({ experience }) {
+interface ExperienceProps {
+  experience: ExperienceType[];
+}
+
+export default function Experience({
+  experience,
+}: ExperienceProps): React.JSX.Element {
   const [ref, visible] = useInView();
   return (
     <section

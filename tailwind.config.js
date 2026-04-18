@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -27,7 +27,7 @@ export default {
       keyframes: {
         fadeUp: {
           from: { opacity: "0", transform: "translateY(24px)" },
-          to: { opacity: "1", transform: "none" },
+          to: { opacity: "1", transform: "translateY(0)" },
         },
       },
     },

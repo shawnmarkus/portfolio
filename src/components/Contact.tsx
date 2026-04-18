@@ -1,6 +1,9 @@
+import React from "react";
+import { ReactNode } from "react";
 import { useInView } from "../hooks/useInView";
+import type { Contact as ContactType } from "../types";
 
-const icons = {
+const icons: Record<string, ReactNode> = {
   email: (
     <svg
       width="16"
@@ -37,29 +40,45 @@ const icons = {
   ),
 };
 
-function ContactLink({ href, icon, label }) {
+interface ContactLinkProps {
+  href: string;
+  icon: ReactNode;
+  label: string;
+}
+
+function ContactLink({
+  href,
+  icon,
+  label,
+}: ContactLinkProps): React.JSX.Element {
   return (
     <a
       href={href}
-      target={href?.startsWith("http") ? "_blank" : undefined}
+      target={href.startsWith("http") ? "_blank" : undefined}
       rel="noreferrer"
-      className="group flex items-center gap-2.5 px-5 py-3 border border-border rounded text-text-dim font-mono text-sm hover:border-amber hover:text-amber hover:bg-amber/5 transition-all"
+      className="flex items-center gap-2.5 px-5 py-3 border border-border rounded text-text-dim font-mono text-sm hover:border-amber hover:text-amber hover:bg-amber/5 transition-all"
     >
       {icon} {label}
     </a>
   );
 }
 
-export default function Contact({ contact, tagline }) {
+interface ContactProps {
+  contact: ContactType;
+  tagline: string;
+}
+
+export default function Contact({
+  contact,
+  tagline,
+}: ContactProps): React.JSX.Element {
   const [ref, visible] = useInView();
-  const c = contact || {};
 
   return (
     <section
       id="contact"
       className="relative z-10 py-24 px-6 md:px-16 bg-surface text-center"
     >
-      {/* header */}
       <div className="flex items-center justify-center gap-4 mb-12">
         <span className="font-mono text-xs text-amber opacity-50">05</span>
         <h2 className="font-sans font-extrabold tracking-tight text-[clamp(1.8rem,3.5vw,2.6rem)]">
@@ -75,26 +94,30 @@ export default function Contact({ contact, tagline }) {
           "{tagline}"
         </p>
         <div className="flex flex-wrap justify-center gap-3">
-          {c.email && (
+          {contact.email && (
             <ContactLink
-              href={`mailto:${c.email}`}
+              href={`mailto:${contact.email}`}
               icon={icons.email}
-              label={c.email}
+              label={contact.email}
             />
           )}
-          {c.phone && (
+          {contact.phone && (
             <ContactLink
-              href={`tel:${c.phone}`}
+              href={`tel:${contact.phone}`}
               icon={icons.phone}
-              label={c.phone}
+              label={contact.phone}
             />
           )}
-          {c.github && (
-            <ContactLink href={c.github} icon={icons.github} label="GitHub" />
-          )}
-          {c.linkedin && (
+          {contact.github && (
             <ContactLink
-              href={c.linkedin}
+              href={contact.github}
+              icon={icons.github}
+              label="GitHub"
+            />
+          )}
+          {contact.linkedin && (
+            <ContactLink
+              href={contact.linkedin}
               icon={icons.linkedin}
               label="LinkedIn"
             />
