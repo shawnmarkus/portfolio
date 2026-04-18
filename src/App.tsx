@@ -42,7 +42,7 @@ export default function App(): React.JSX.Element {
   }
 
   const { meta, skills, projects, experience, blogs, contact } = data;
-
+  alert(meta.resume_url);
   return (
     <div className="min-h-screen bg-bg text-text font-sans">
       <Cursor />

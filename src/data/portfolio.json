@@ -7,7 +7,7 @@
     "bio": "3+ years designing CI/CD pipelines, containerised deployments, and cloud infrastructure on AWS and GCP. Pivoting into DevOps / Platform Engineering with a focus on automation, observability, and developer experience.",
     "location": "Noida, Uttar Pradesh",
     "avatar": "",
-    "resume_url": "",
+    "resume_url": "https://drive.google.com/file/d/1gnUkVyDGKNybGzAmaQouU0VLlqPF-12Q/view?usp=sharing",
     "contact_tagline": "Open to DevOps, Platform Engineering & Backend roles."
   },
   "tech_highlights": [
@@ -72,6 +72,75 @@
     }
   ],
   "projects": {
+    "professional": [
+      {
+        "icon": "🤖",
+        "name": "GenAI Support Chatbot",
+        "desc": "LangChain + Pinecone powered chatbot delivering contextual responses, reducing manual support interactions by ~30%. Slack integration for real-time DB updates.",
+        "stack": ["LangChain", "Pinecone", "Slack API", "Python"],
+        "company": "Let's Hang",
+        "link": ""
+      },
+      {
+        "icon": "⚙️",
+        "name": "CI/CD Pipeline Optimisation",
+        "desc": "Redesigned GitHub Actions / Bitbucket Pipelines with strategic caching, cutting build times 40% with zero-downtime deployments.",
+        "stack": ["GitHub Actions", "Bitbucket", "Docker", "AWS ECR"],
+        "company": "Let's Hang",
+        "link": ""
+      },
+      {
+        "icon": "🕉️",
+        "name": "Shaivam — Devotional App",
+        "desc": "React Native app with custom SQLite music player, handling 1M+ concurrent requests during Maha Shivaratri. Google Maps temple itinerary module.",
+        "stack": ["React Native", "TypeScript", "SQLite", "Google Maps"],
+        "company": "Bytive",
+        "link": ""
+      },
+      {
+        "icon": "🏥",
+        "name": "Hospital Management System",
+        "desc": "Comprehensive HMS digitising hospital records, enabling real-time remote access for patient monitoring and document management.",
+        "stack": ["Node.js", "MongoDB", "REST API"],
+        "company": "Bytive",
+        "link": ""
+      },
+      {
+        "icon": "🏥",
+        "name": "Book OPD",
+        "desc": "An Online plaftorm to book doctor's appointment sitting at home",
+        "stack": [
+          "Python(FastAPI)",
+          "MongoDB",
+          "REST API",
+          "AWS(Lambda)",
+          "Docker",
+          "AWS(ECR)",
+          "AWS(API-Gateway)",
+          "AWS(Route-53)",
+          "AWS(S3)"
+        ],
+        "company": "FREELANCING"
+      },
+      {
+        "icon": "🏥",
+        "name": "Bikers",
+        "desc": "An platform from bikers enthusiastics to create rides and add peoples from any where, get live location while travelling",
+        "stack": [
+          "Python(FastAPI)",
+          "MongoDB",
+          "REST API",
+          "AWS(Lambda)",
+          "Docker",
+          "AWS(ECR)",
+          "AWS(API-Gateway)",
+          "AWS(Route-53)",
+          "AWS(S3)"
+        ],
+        "company": "FREELANCING",
+        "link": ""
+      }
+    ],
     "personal": [
       {
         "icon": "🦀",
@@ -105,40 +174,6 @@
         "date": "Mar 2022",
         "link": ""
       }
-    ],
-    "professional": [
-      {
-        "icon": "🤖",
-        "name": "GenAI Support Chatbot",
-        "desc": "LangChain + Pinecone powered chatbot delivering contextual responses, reducing manual support interactions by ~30%. Slack integration for real-time DB updates.",
-        "stack": ["LangChain", "Pinecone", "Slack API", "Python"],
-        "company": "Let's Hang",
-        "link": ""
-      },
-      {
-        "icon": "⚙️",
-        "name": "CI/CD Pipeline Optimisation",
-        "desc": "Redesigned GitHub Actions / Bitbucket Pipelines with strategic caching, cutting build times 40% with zero-downtime deployments.",
-        "stack": ["GitHub Actions", "Bitbucket", "Docker", "AWS ECR"],
-        "company": "Let's Hang",
-        "link": ""
-      },
-      {
-        "icon": "🕉️",
-        "name": "Shaivam — Devotional App",
-        "desc": "React Native app with custom SQLite music player, handling 1M+ concurrent requests during Maha Shivaratri. Google Maps temple itinerary module.",
-        "stack": ["React Native", "TypeScript", "SQLite", "Google Maps"],
-        "company": "Bytive",
-        "link": ""
-      },
-      {
-        "icon": "🏥",
-        "name": "Hospital Management System",
-        "desc": "Comprehensive HMS digitising hospital records, enabling real-time remote access for patient monitoring and document management.",
-        "stack": ["Node.js", "MongoDB", "REST API"],
-        "company": "Bytive",
-        "link": ""
-      }
     ]
   },
   "experience": [
@@ -165,11 +200,26 @@
       ]
     }
   ],
-  "blogs": [],
+  "blogs": [
+    {
+      "tag": "DataBase, Transactions",
+      "title": "Database Concurrency and Firestore Transactions",
+      "excerpt": "How MVCC Works and Why You Shouldn’t Use Transactions Everywhere.",
+      "date": "Jan 14, 2026",
+      "link": "https://medium.com/@shivamsharmaskp94/database-concurrency-and-firestore-transactions-how-mvcc-works-and-why-you-shouldnt-use-834da0d88e18"
+    },
+    {
+      "tag": "AWS,LocalStack,IAM",
+      "title": "AWS IAM Service — Complete basics guide (LocalStack)",
+      "excerpt": "Learn IAM Service using LocalStack for free",
+      "date": "Apr 1, 2025",
+      "link": "hhttps://medium.com/@shivamsharmaskp94/aws-iam-service-complete-basics-guide-localstack-70b45b45acbe"
+    }
+  ],
   "contact": {
     "email": "shivamsharmaskp94@gmail.com",
     "phone": "+91 85430 45749",
-    "linkedin": "https://linkedin.com/in/YOUR_PROFILE",
-    "github": "https://github.com/YOUR_USERNAME"
+    "linkedin": "https://www.linkedin.com/in/shivam-sharma-1a53091a5/",
+    "github": "https://github.com/shawnmarkus"
   }
 }

@@ -52,6 +52,7 @@ export default function Navbar({ resumeUrl }: NavbarProps): React.JSX.Element {
         <div className="flex items-center gap-3">
           <a
             href={resumeUrl || "#"}
+            target="_blank"
             download={resumeUrl || undefined}
             className="hidden md:block font-mono text-xs text-amber border border-amber px-4 py-2 rounded hover:bg-amber hover:text-bg transition-all"
           >
@@ -98,6 +99,7 @@ export default function Navbar({ resumeUrl }: NavbarProps): React.JSX.Element {
           href={resumeUrl || "#"}
           download={resumeUrl || undefined}
           onClick={closeMenu}
+          target="_blank"
           className="font-mono text-sm text-amber border border-amber px-6 py-3 rounded hover:bg-amber hover:text-bg transition-all"
         >
           ↓ Download Resume

@@ -95,10 +95,10 @@ interface ProjectsProps {
 export default function Projects({
   projects,
 }: ProjectsProps): React.JSX.Element {
-  const [tab, setTab] = useState<TabKey>("personal");
+  const [tab, setTab] = useState<TabKey>("professional");
   const [ref, visible] = useInView();
 
-  const tabs: TabKey[] = ["personal", "professional"];
+  const tabs: TabKey[] = ["professional", "personal"];
 
   return (
     <section id="projects" className="relative z-10 py-24 px-6 md:px-16">

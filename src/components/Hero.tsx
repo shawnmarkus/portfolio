@@ -108,6 +108,7 @@ export default function Hero({
             <a
               href={resumeUrl || "#"}
               download={resumeUrl || undefined}
+              target="_blank"
               className="font-mono text-sm px-6 py-3 border border-border text-text-dim rounded hover:border-teal hover:text-teal transition-colors"
             >
               ↓ Download Resume
