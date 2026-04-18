@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "name": "Shivam Sharma",
+    "initials": "SS",
+    "role": "Software Development Engineer",
+    "title": "Building cloud-native systems & scalable backends",
+    "bio": "3+ years designing CI/CD pipelines, containerised deployments, and cloud infrastructure on AWS and GCP. Pivoting into DevOps / Platform Engineering with a focus on automation, observability, and developer experience.",
+    "location": "Noida, Uttar Pradesh",
+    "avatar": "",
+    "resume_url": "",
+    "contact_tagline": "Open to DevOps, Platform Engineering & Backend roles."
+  },
+  "tech_highlights": [
+    "AWS",
+    "GCP",
+    "Docker",
+    "TypeScript",
+    "Python",
+    "React Native",
+    "LangChain",
+    "FastAPI"
+  ],
+  "skills": [
+    {
+      "label": "Languages",
+      "tags": ["C", "C++", "Python", "JavaScript", "TypeScript", "SQL", "Java"]
+    },
+    {
+      "label": "Cloud",
+      "tags": [
+        "AWS EC2/S3/Lambda",
+        "GCP Cloud Functions",
+        "Pub/Sub",
+        "CloudFront",
+        "Route 53",
+        "IAM"
+      ]
+    },
+    {
+      "label": "Frameworks",
+      "tags": [
+        "React",
+        "Vue",
+        "React Native",
+        "Express",
+        "FastAPI",
+        "Flask",
+        "Firebase"
+      ]
+    },
+    {
+      "label": "Databases",
+      "tags": ["MongoDB", "Firestore", "DynamoDB", "SQLite", "Pinecone"]
+    },
+    {
+      "label": "DevOps & CI/CD",
+      "tags": [
+        "Docker",
+        "GitHub Actions",
+        "Bitbucket Pipelines",
+        "AWS ECR",
+        "S3 Deploy"
+      ]
+    },
+    {
+      "label": "Generative AI",
+      "tags": ["LangChain", "LLM Integration", "RAG Pipelines", "Vector DBs"]
+    },
+    {
+      "label": "Tools",
+      "tags": ["Git", "Sentry", "PostHog", "Neovim", "Linux", "Shell Scripting"]
+    }
+  ],
+  "projects": {
+    "personal": [
+      {
+        "icon": "🦀",
+        "name": "ADB-logger",
+        "desc": "High-performance desktop app to parse and visualise Android Debug Bridge logs, built with Rust and Tauri.",
+        "stack": ["Rust", "Tauri"],
+        "date": "Mar 2026",
+        "link": ""
+      },
+      {
+        "icon": "🚗",
+        "name": "Commute Crew",
+        "desc": "Custom carpooling platform with REST APIs and geolocation to maximise successful matches and reduce fuel consumption.",
+        "stack": ["Node.js", "MongoDB", "REST APIs"],
+        "date": "Apr 2023",
+        "link": ""
+      },
+      {
+        "icon": "📧",
+        "name": "Auto Email Reply",
+        "desc": "Intelligent automated email reply system using OAuth2, saving 10+ hours of manual work per week.",
+        "stack": ["Node.js", "OAuth2", "Gmail API"],
+        "date": "Jun 2023",
+        "link": ""
+      },
+      {
+        "icon": "🎵",
+        "name": "Spotify Playlist Importer",
+        "desc": "Secure utility that seamlessly migrates any Spotify playlist to YouTube, eliminating platform lock-in.",
+        "stack": ["Python", "Flask", "Spotify API", "YouTube API"],
+        "date": "Mar 2022",
+        "link": ""
+      }
+    ],
+    "professional": [
+      {
+        "icon": "🤖",
+        "name": "GenAI Support Chatbot",
+        "desc": "LangChain + Pinecone powered chatbot delivering contextual responses, reducing manual support interactions by ~30%. Slack integration for real-time DB updates.",
+        "stack": ["LangChain", "Pinecone", "Slack API", "Python"],
+        "company": "Let's Hang",
+        "link": ""
+      },
+      {
+        "icon": "⚙️",
+        "name": "CI/CD Pipeline Optimisation",
+        "desc": "Redesigned GitHub Actions / Bitbucket Pipelines with strategic caching, cutting build times 40% with zero-downtime deployments.",
+        "stack": ["GitHub Actions", "Bitbucket", "Docker", "AWS ECR"],
+        "company": "Let's Hang",
+        "link": ""
+      },
+      {
+        "icon": "🕉️",
+        "name": "Shaivam — Devotional App",
+        "desc": "React Native app with custom SQLite music player, handling 1M+ concurrent requests during Maha Shivaratri. Google Maps temple itinerary module.",
+        "stack": ["React Native", "TypeScript", "SQLite", "Google Maps"],
+        "company": "Bytive",
+        "link": ""
+      },
+      {
+        "icon": "🏥",
+        "name": "Hospital Management System",
+        "desc": "Comprehensive HMS digitising hospital records, enabling real-time remote access for patient monitoring and document management.",
+        "stack": ["Node.js", "MongoDB", "REST API"],
+        "company": "Bytive",
+        "link": ""
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Let's Hang",
+      "role": "Software Development Engineer",
+      "period": "Aug 2024 – Present",
+      "bullets": [
+        "Designed and optimised CI/CD pipelines using GitHub Actions / Bitbucket Pipelines with strategic caching, reducing build times by 40% and enabling zero-downtime deployments.",
+        "Built a GenAI chatbot with LangChain and Pinecone for accurate contextual responses, cutting manual support interactions by ~30%.",
+        "Integrated Slack API to monitor real-time user activity and push vector DB updates directly from Slack.",
+        "Architected scalable backend workflows on GCP (Cloud Functions, Cloud Storage, Monitoring) and Firebase.",
+        "Developed a cross-platform mobile app using React Native and TypeScript."
+      ]
+    },
+    {
+      "company": "Bytive",
+      "role": "Software Development Engineer",
+      "period": "Jun 2023 – Aug 2024",
+      "bullets": [
+        "Engineered the Shaivam React Native app with a custom SQLite music player, handling 1M+ concurrent requests at peak Maha Shivaratri.",
+        "Integrated Google Maps module for devotees to plan temple itineraries across India.",
+        "Built a comprehensive Hospital Management System to digitise records and enable remote patient monitoring."
+      ]
+    }
+  ],
+  "blogs": [],
+  "contact": {
+    "email": "shivamsharmaskp94@gmail.com",
+    "phone": "+91 85430 45749",
+    "linkedin": "https://linkedin.com/in/YOUR_PROFILE",
+    "github": "https://github.com/YOUR_USERNAME"
+  }
+}
