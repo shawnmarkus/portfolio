@@ -169,7 +169,7 @@
         "desc": "Custom carpooling platform with REST APIs and geolocation to maximise successful matches and reduce fuel consumption.",
         "stack": ["Node.js", "MongoDB", "REST APIs"],
         "date": "Apr 2023",
-        "link": ""
+        "link": "https://github.com/shawnmarkus/CommuteCrew"
       },
       {
         "icon": "📧",
@@ -177,7 +177,7 @@
         "desc": "Intelligent automated email reply system using OAuth2, saving 10+ hours of manual work per week.",
         "stack": ["Node.js", "OAuth2", "Gmail API"],
         "date": "Jun 2023",
-        "link": ""
+        "link": "https://github.com/shawnmarkus/AutoSendEmail"
       },
       {
         "icon": "🎵",
@@ -185,7 +185,7 @@
         "desc": "Secure utility that seamlessly migrates any Spotify playlist to YouTube, eliminating platform lock-in.",
         "stack": ["Python", "Flask", "Spotify API", "YouTube API"],
         "date": "Mar 2022",
-        "link": ""
+        "link": "https://github.com/shawnmarkus/musicPlaylistImportToYoutube"
       }
     ]
   },
