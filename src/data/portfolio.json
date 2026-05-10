@@ -143,6 +143,19 @@
     ],
     "personal": [
       {
+        "icon": "📋",
+        "name": "Clipt",
+        "desc": "A native macOS clipboard history manager that lives in the menu bar. Features include an LRU eviction algorithm, global Carbon hotkeys, and a launchd background daemon.",
+        "stack": [
+          "Swift",
+          "SwiftUI",
+          "AppKit",
+          "macOS"
+        ],
+        "date": "May 2026",
+        "link": "https://github.com/shawnmarkus/Clipt"
+      },
+      {
         "icon": "🦀",
         "name": "ADB-logger",
         "desc": "High-performance desktop app to parse and visualise Android Debug Bridge logs, built with Rust and Tauri.",
