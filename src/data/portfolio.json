@@ -161,7 +161,7 @@
         "desc": "High-performance desktop app to parse and visualise Android Debug Bridge logs, built with Rust and Tauri.",
         "stack": ["Rust", "Tauri"],
         "date": "Mar 2026",
-        "link": ""
+        "link": "https://github.com/shawnmarkus/adblogger"
       },
       {
         "icon": "🚗",
