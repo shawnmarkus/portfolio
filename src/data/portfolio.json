@@ -18,7 +18,9 @@
     "Python",
     "React Native",
     "LangChain",
-    "FastAPI"
+    "FastAPI",
+    "LangGraph",
+    "RAG Pipelines"
   ],
   "skills": [
     {
@@ -26,31 +28,53 @@
       "tags": ["C", "C++", "Python", "JavaScript", "TypeScript", "SQL", "Java"]
     },
     {
-      "label": "Cloud",
-      "tags": [
-        "AWS EC2/S3/Lambda",
-        "GCP Cloud Functions",
-        "Pub/Sub",
-        "CloudFront",
-        "Route 53",
-        "IAM"
-      ]
-    },
-    {
       "label": "Frameworks",
       "tags": [
         "React",
-        "Vue",
         "React Native",
+        "Vue",
         "Express",
+        "Firebase",
+        "Docker",
         "FastAPI",
         "Flask",
-        "Firebase"
+        "Spring Boot"
+      ]
+    },
+    {
+      "label": "Cloud",
+      "tags": [
+        "GitHub Actions",
+        "GCP Cloud Functions",
+        "Pub/Sub",
+        "Cloud Scheduler",
+        "Cloud Tasks",
+        "AWS EC2",
+        "AWS S3",
+        "AWS ECR",
+        "AWS CloudFront",
+        "AWS API Gateway",
+        "AWS Route 53",
+        "AWS IAM",
+        "AWS Lambda",
+        "AWS CloudFormation"
       ]
     },
     {
       "label": "Databases",
-      "tags": ["MongoDB", "Firestore", "DynamoDB", "SQLite", "Pinecone"]
+      "tags": ["MongoDB", "Pinecone", "SQL", "Firestore", "DynamoDB"]
+    },
+    {
+      "label": "Generative AI",
+      "tags": [
+        "LangChain",
+        "LangGraph",
+        "AutoGen",
+        "CrewAI",
+        "BeeAI",
+        "RAG Pipelines",
+        "MCP"
+      ]
     },
     {
       "label": "DevOps & CI/CD",
@@ -59,16 +83,16 @@
         "GitHub Actions",
         "Bitbucket Pipelines",
         "AWS ECR",
-        "S3 Deploy"
+        "AWS CloudFormation"
       ]
     },
     {
-      "label": "Generative AI",
-      "tags": ["LangChain", "LLM Integration", "RAG Pipelines", "Vector DBs"]
+      "label": "Tools",
+      "tags": ["Git", "Bitbucket", "Sentry", "PostHog", "Neovim"]
     },
     {
-      "label": "Tools",
-      "tags": ["Git", "Sentry", "PostHog", "Neovim", "Linux", "Shell Scripting"]
+      "label": "Familiarity",
+      "tags": ["Linux", "Shell Scripting", "Web Scraping", "REST API Design"]
     }
   ],
   "projects": {
