@@ -106,38 +106,39 @@
         "link": ""
       },
       {
-        "icon": "🏥",
+        "icon": "📅",
         "name": "Book OPD",
-        "desc": "An Online plaftorm to book doctor's appointment sitting at home",
+        "desc": "An online platform to book doctor appointments from home, with a serverless backend deployed on AWS infrastructure.",
         "stack": [
-          "Python(FastAPI)",
+          "Python (FastAPI)",
           "MongoDB",
           "REST API",
-          "AWS(Lambda)",
+          "AWS Lambda",
           "Docker",
-          "AWS(ECR)",
-          "AWS(API-Gateway)",
-          "AWS(Route-53)",
-          "AWS(S3)"
+          "AWS ECR",
+          "AWS API Gateway",
+          "AWS Route 53",
+          "AWS S3"
         ],
-        "company": "FREELANCING"
+        "company": "Freelancing",
+        "link": ""
       },
       {
-        "icon": "🏥",
+        "icon": "🏍️",
         "name": "Bikers",
-        "desc": "An platform from bikers enthusiastics to create rides and add peoples from any where, get live location while travelling",
+        "desc": "A platform for biking enthusiasts to create rides, add participants from anywhere, and share live location while travelling.",
         "stack": [
-          "Python(FastAPI)",
+          "Python (FastAPI)",
           "MongoDB",
           "REST API",
-          "AWS(Lambda)",
+          "AWS Lambda",
           "Docker",
-          "AWS(ECR)",
-          "AWS(API-Gateway)",
-          "AWS(Route-53)",
-          "AWS(S3)"
+          "AWS ECR",
+          "AWS API Gateway",
+          "AWS Route 53",
+          "AWS S3"
         ],
-        "company": "FREELANCING",
+        "company": "Freelancing",
         "link": ""
       }
     ],
@@ -146,12 +147,7 @@
         "icon": "📋",
         "name": "Clipt",
         "desc": "A native macOS clipboard history manager that lives in the menu bar. Features include an LRU eviction algorithm, global Carbon hotkeys, and a launchd background daemon.",
-        "stack": [
-          "Swift",
-          "SwiftUI",
-          "AppKit",
-          "macOS"
-        ],
+        "stack": ["Swift", "SwiftUI", "AppKit", "macOS"],
         "date": "May 2026",
         "link": "https://github.com/shawnmarkus/Clipt"
       },
@@ -162,6 +158,22 @@
         "stack": ["Rust", "Tauri"],
         "date": "Mar 2026",
         "link": "https://github.com/shawnmarkus/adblogger"
+      },
+      {
+        "icon": "🌐",
+        "name": "NetScope",
+        "desc": "Network analysis tool that captures website network calls and user interactions, then generates AI-powered analytical reports with actionable insights for performance improvement and inspection.",
+        "stack": ["React", "Node.js", "AI"],
+        "date": "",
+        "link": "https://github.com/shawnmarkus/NetScope"
+      },
+      {
+        "icon": "⬇️",
+        "name": "StreamDL",
+        "desc": "Cross-platform desktop application for downloading HLS streams and videos, combining a Rust backend via Tauri with a React frontend for a seamless native experience.",
+        "stack": ["Tauri", "Rust", "React"],
+        "date": "",
+        "link": "https://github.com/shawnmarkus/streamDL"
       },
       {
         "icon": "🚗",
@@ -217,24 +229,23 @@
     {
       "tag": "DataBase, Transactions",
       "title": "Database Concurrency and Firestore Transactions",
-      "excerpt": "How MVCC Works and Why You Shouldn’t Use Transactions Everywhere.",
+      "excerpt": "How MVCC Works and Why You Shouldn't Use Transactions Everywhere.",
       "date": "Jan 14, 2026",
       "link": "https://medium.com/@shivamsharmaskp94/database-concurrency-and-firestore-transactions-how-mvcc-works-and-why-you-shouldnt-use-834da0d88e18"
     },
     {
-      "tag": "AWS,LocalStack,IAM",
+      "tag": "AWS, LocalStack, IAM",
       "title": "AWS IAM Service — Complete basics guide (LocalStack)",
       "excerpt": "Learn IAM Service using LocalStack for free",
       "date": "Apr 1, 2025",
-      "link": "hhttps://medium.com/@shivamsharmaskp94/aws-iam-service-complete-basics-guide-localstack-70b45b45acbe"
+      "link": "https://medium.com/@shivamsharmaskp94/aws-iam-service-complete-basics-guide-localstack-70b45b45acbe"
     },
     {
       "tag": "Cache, VitePWA, Service worker",
-      "title": "The “Stale” app issue: Browser Caching & Service Worker",
+      "title": "The \"Stale\" app issue: Browser Caching & Service Worker",
       "excerpt": "Before we move ahead, let me clear, what we used for caching strategy, CacheFirst: Serve the cache and then load the latest in background.",
       "date": "Apr 18, 2026",
       "link": "https://medium.com/@shivamsharmaskp94/the-stale-app-issue-browser-cache-and-service-workers-f01991d2d58f"
-    
     }
   ],
   "contact": {
