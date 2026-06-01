@@ -270,6 +270,13 @@
       "excerpt": "Before we move ahead, let me clear, what we used for caching strategy, CacheFirst: Serve the cache and then load the latest in background.",
       "date": "Apr 18, 2026",
       "link": "https://medium.com/@shivamsharmaskp94/the-stale-app-issue-browser-cache-and-service-workers-f01991d2d58f"
+    },
+    {
+      "tag": "Microservices, Scaling",
+      "title": "Let's Answer “Why?” for Most Beginners: Micro-services & Scaling",
+      "excerpt": "I was asked by many beginners, and even I have also been through that phase where I always thought about going full scale (use Kubernetes...",
+      "date": "May 11, 2026",
+      "link": "https://medium.com/@shivamsharmaskp94/lets-answer-why-for-most-beginners-micro-services-scaling-084952664879"
     }
   ],
   "contact": {
